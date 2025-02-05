@@ -1,0 +1,154 @@
+/* === GLOBAL STYLES === */
+body, html {
+    background-color: #121212 !important;
+    color: #E0E0E0 !important;
+    font-family: "Poppins", sans-serif !important;
+}
+
+/* === TITLES & TEXT === */
+h1, h2, h3, h4, h5, h6 {
+    color: #E0E0E0 !important;
+}
+
+/* === SEARCH INPUT & BUTTON === */
+/* Now only target inputs with class "search-input" */
+.search-input {
+    background-color: #1E1E1E !important;
+    color: #E0E0E0 !important;
+    border: 1px solid #444 !important;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+button {
+    background-color: #1DB954 !important;
+    color: #FFF !important;
+    border-radius: 8px !important;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #17A74B !important;
+    transition: 0.3s ease-in-out;
+}
+
+/* === DARK MODE FOR DASH TABS === */
+.dash-tabs {
+    background-color: #1E1E1E !important;
+    border-radius: 8px !important;
+}
+
+/* Inactive Tabs */
+.tab {
+    background-color: #1E1E1E !important;
+    color: #BBB !important;
+    padding: 12px 20px !important;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+/* Active Tab - Highlight Effect */
+.tab--selected {
+    background-color: #1DB954 !important;  /* Green Highlight */
+    color: #FFF !important;
+    font-weight: bold !important;
+    border-top: 2px solid #1DB954 !important;
+}
+
+/* Hover Effect */
+.tab:hover {
+    background-color: #2C2C2C !important;
+    transition: 0.3s ease-in-out;
+}
+
+/* === TECHNICAL INDICATOR TABLE === */
+.technical-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1E1E1E !important;
+}
+
+.technical-table th, .technical-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #333 !important;
+    color: #E0E0E0 !important;
+}
+
+/* Hover Effect for Table Rows */
+.technical-table tr:hover {
+    background-color: #222 !important;
+}
+
+/* Fix Table Container Background */
+.dash-table-container {
+    background-color: #121212 !important;
+}
+
+/* === PARAMETER INPUT BOXES === */
+.parameter-box {
+    background-color: #1E1E1E !important;
+    color: #E0E0E0 !important;
+    border: 1px solid #444 !important;
+    padding: 8px;
+    border-radius: 5px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+/* Highlight Active Input */
+.parameter-box:focus {
+    border-color: #1DB954 !important;
+    outline: none;
+}
+
+/* === LOADING SPINNER STYLING === */
+.dcc-loading {
+    background-color: #121212 !important;
+}
+
+/* === TOOLTIPS FOR INDICATOR NAMES === */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+
+/* Tooltip Text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Show Tooltip on Hover */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* === OVERRIDES FOR DASH DROPDOWN COMPONENTS === */
+/* Adjust the selectors as needed based on your Dash/react-select version */
+.dcc-dropdown .Select-control,
+.dcc-dropdown .css-1s2u09g-control {
+    background-color: #1E1E1E !important;
+    color: #E0E0E0 !important;
+    border: 1px solid #444 !important;
+    border-radius: 8px !important;
+    padding: 5px !important;
+}
