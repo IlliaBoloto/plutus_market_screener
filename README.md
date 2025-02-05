@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """
 # Plutus Stock Screener
 
